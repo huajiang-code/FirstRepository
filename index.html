@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body >
-<img src="images/tu2.jpg" alt="" id="imgs">
+<body style="background-color: black;">
+<img src="images/xing.png" alt="" id="imgs">
+<img src="images/xing.png" alt="" id="imgs1">
+<img src="images/xing.png" alt="" id="imgs2">
+<img src="images/xing.png" alt="" id="imgs3">
+<img src="images/xing.png" alt="" id="imgs4">
+<img src="images/xing.png" alt="" id="imgs5">
+<img src="images/xing.png" alt="" id="imgs6">
+<img src="images/xing.png" alt="" id="imgs7">
+<img src="images/xing.png" alt="" id="imgs8">
+<img src="images/xing.png" alt="" id="imgs9">
+<img src="images/xing.png" alt="" id="imgs10">
 <script>
     var imgs=document.getElementById("imgs");
+    var imgs1=document.getElementById("imgs1");
+    var imgs2=document.getElementById("imgs2");
+    var imgs3=document.getElementById("imgs3");
+    var imgs4=document.getElementById("imgs4");
+    var imgs5=document.getElementById("imgs5");
+    var imgs6=document.getElementById("imgs6");
+    var imgs7=document.getElementById("imgs7");
+    var imgs8=document.getElementById("imgs8");
+    var imgs9=document.getElementById("imgs9");
+    var imgs10=document.getElementById("imgs10");
 
     function suiji(min, max)
     {
@@ -15,9 +35,29 @@
             var str = Math.floor(Math.random() * (min - max-1) + max+1);
             return str;
     };
-      // document.write(suiji(100,102));
+      //document.write(suiji(100,102));
     setInterval(function () {
-        imgs.setAttribute("style","width:"+suiji(100,400)+"px;position:absolute;left:"
+        imgs.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs1.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs2.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs3.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs4.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs5.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs6.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs7.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs8.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs9.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
+            +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
+        imgs10.setAttribute("style","width:"+suiji(10,50)+"px;position:absolute;left:"
             +suiji(0,1300)+"px;top:"+suiji(0,650)+"px;");
     },500);
 
